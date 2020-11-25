@@ -4,4 +4,6 @@ A Quiz server with three different modes, Admin Mode to populate question databa
 To Run the server on linux open a terminal window in the respective folder and type "gcc -pthread server.c";
 To Add an instance of a client run the Client Script Using "gcc -pthread client.c"
 
-This server uses multithreading to handle multiple clients.
+<h3>This server uses multithreading to handle multiple clients.<\h3>
+
+This server currently supports Questions on only three topics, threading , memory management and scheduling.
