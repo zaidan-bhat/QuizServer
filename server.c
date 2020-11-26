@@ -285,6 +285,8 @@ void *handle_client(void *arg){
 		for(int i=10;i<cli_count+10;i++){
 			sprintf(buf1,"%d\n",i);
 			send_to(buf1,cli->uid);
+			sprintf(buf1,"Your userId is %d\n",cli->uid);
+			send_to(buf1,cli->uid);
 		}
 		int rv=recv(cli->sockfd, partner, BUFFER_SZ, 0);
 		partner_uid=atoi(partner);
